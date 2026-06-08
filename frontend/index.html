@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Review Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Beauty Review Intelligence</h1>
+    <p class="tagline">Compare reviews for any beauty product across Amazon, Nykaa, Myntra, Tira &amp; AJIO — instantly.</p>
+    <form id="search-form" class="search-form" autocomplete="off">
+      <input
+        type="text"
+        id="product-input"
+        name="product"
+        placeholder="e.g. Minimalist Vitamin C Serum"
+        maxlength="120"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+    <p id="status-message" class="status-message" role="status"></p>
+  </header>
+
+  <main id="dashboard" class="dashboard" hidden>
+    <section id="recommendation" class="recommendation"></section>
+    <div id="cards" class="cards"></div>
+  </main>
+
+  <footer class="site-footer">
+    Built by Keshvi Singhvi · Beauty Review Intelligence Tool · 2026
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
